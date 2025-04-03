@@ -1,4 +1,3 @@
-# chat.py
 import os
 import pickle
 import ollama

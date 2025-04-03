@@ -1,13 +1,12 @@
-# main.py
 import sys
 
 def main():
     while True:
-        print("\n=== RAG LLM Application ===")
-        print("1. Train / Create Vector Database")
+        print("\n=== Road Users Code (Hong Kong) RAG Application ===")
+        print("1. Create Vector Database")
         print("2. Chat with RAG LLM")
         print("3. Run Tests")
-        print("q. Quit")
+        print("Q. Quit")
         
         selection = input("Enter your choice: ").strip()
         
@@ -32,7 +31,7 @@ def main():
                 test.run_tests()
             except Exception as e:
                 print(f"An error occurred during testing: {e}")
-        elif selection.lower() in ("q", "quit", "exit"):
+        elif selection.lower() in ("Q", "q", "quit", "exit"):
             print("\nExiting application. Goodbye!")
             sys.exit()
         else:
